@@ -16,29 +16,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-1l-ZPx">
-                                <rect key="frame" x="173.5" y="432.5" width="67" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="onBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ib-SX-8w8"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZoJ-8b-mZY">
+                                <rect key="frame" x="90.5" y="315" width="233.5" height="266.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="generated password will appear" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-9n-DOM">
+                                        <rect key="frame" x="0.0" y="0.0" width="233.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-1l-ZPx">
+                                        <rect key="frame" x="60.5" y="84" width="112.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Change Color"/>
+                                        <connections>
+                                            <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obk-H6-Rs9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-Ha-G0B">
+                                        <rect key="frame" x="75" y="165" width="83.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Generate"/>
+                                        <connections>
+                                            <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLn-Ii-ZOW"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-6q-hkA">
+                                        <rect key="frame" x="96" y="246" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-gi-XLJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Password BruteForce" id="RX0-ib-OFx"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NWZ-1l-ZPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fYv-Ly-zRK"/>
-                            <constraint firstItem="NWZ-1l-ZPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qss-4p-aWs"/>
+                            <constraint firstItem="ZoJ-8b-mZY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cI5-7s-8Hf"/>
+                            <constraint firstItem="ZoJ-8b-mZY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqp-Nm-nSZ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="NWZ-1l-ZPx" id="wPk-De-MNo"/>
+                        <outlet property="label" destination="DXc-6q-hkA" id="gYW-q7-R7P"/>
+                        <outlet property="textField" destination="SUa-9n-DOM" id="g1p-jS-x2F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="84"/>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
     </scenes>
     <resources>
