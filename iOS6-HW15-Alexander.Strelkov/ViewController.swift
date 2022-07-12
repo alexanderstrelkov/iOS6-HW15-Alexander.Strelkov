@@ -10,6 +10,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    @IBOutlet weak var label: UILabel!
     
     var isBlack: Bool = false {
         didSet {
@@ -21,17 +25,27 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func onBut(_ sender: UIButton) {
+    @IBAction func changeColorButton(_ sender: UIButton) {
         isBlack.toggle()
+    }
+
+    
+    @IBAction func generateButton(_ sender: UIButton) {
+        textField.text = "\(randomPasswordGenerate())"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //        textField.isSecureTextEntry = true
         
-        self.bruteForce(passwordToUnlock: "1!gr")
-        
-        // Do any additional setup after loading the view.
-        
+        self.bruteForce(passwordToUnlock: "")
+    }
+    
+    func randomPasswordGenerate() -> String {
+        let passwordLenght = 4
+        let pswdChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        let randomPassword = String((0..<passwordLenght).compactMap{ _ in pswdChars.randomElement() })
+        return randomPassword
     }
     
     func bruteForce(passwordToUnlock: String) {
