@@ -16,36 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZoJ-8b-mZY">
-                                <rect key="frame" x="90.5" y="315" width="233.5" height="266.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-oF-1fj">
+                                <rect key="frame" x="90.5" y="181" width="233.5" height="534"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="generated password will appear" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-9n-DOM">
                                         <rect key="frame" x="0.0" y="0.0" width="233.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-1l-ZPx">
-                                        <rect key="frame" x="60.5" y="84" width="112.5" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Change Color"/>
-                                        <connections>
-                                            <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obk-H6-Rs9"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-Ha-G0B">
-                                        <rect key="frame" x="75" y="165" width="83.5" height="31"/>
+                                        <rect key="frame" x="75" y="85" width="83.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Generate"/>
                                         <connections>
                                             <action selector="generateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLn-Ii-ZOW"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-6q-hkA">
-                                        <rect key="frame" x="96" y="246" width="41.5" height="20.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-1l-ZPx">
+                                        <rect key="frame" x="49" y="167" width="135" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Search password"/>
+                                        <connections>
+                                            <action selector="searchPasswordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVL-vv-wP0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-6q-hkA">
+                                        <rect key="frame" x="91.5" y="249" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="E6Z-r1-uC2">
+                                        <rect key="frame" x="106.5" y="350" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-JM-fu3">
+                                        <rect key="frame" x="87.5" y="421" width="58" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33S-4o-ZRK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-eZ-FzA">
+                                        <rect key="frame" x="89.5" y="503" width="54.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7NG-SY-2Kg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-gi-XLJ">
@@ -59,12 +78,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZoJ-8b-mZY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cI5-7s-8Hf"/>
-                            <constraint firstItem="ZoJ-8b-mZY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqp-Nm-nSZ"/>
+                            <constraint firstItem="vA5-oF-1fj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Tx-Hs-hiA"/>
+                            <constraint firstItem="vA5-oF-1fj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oAz-cY-scP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="NWZ-1l-ZPx" id="wPk-De-MNo"/>
+                        <outlet property="activityIndicator" destination="E6Z-r1-uC2" id="LnF-IG-JXY"/>
                         <outlet property="label" destination="DXc-6q-hkA" id="gYW-q7-R7P"/>
                         <outlet property="textField" destination="SUa-9n-DOM" id="g1p-jS-x2F"/>
                     </connections>
