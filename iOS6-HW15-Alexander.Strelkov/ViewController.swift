@@ -9,70 +9,82 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var isStopped: Bool = false
+        
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var label: UILabel!
-    
-    @IBAction func searchPasswordButton(_ sender: Any) {
+    @IBAction func searchPasswordButton(_ sender: UIButton) {
+        self.stopButton.isEnabled = true
         self.bruteForce(passwordToUnlock: textField.text ?? "")
     }
-    
     @IBAction func generateButton(_ sender: UIButton) {
         textField.text = "\(randomPasswordGenerate())"
     }
-    
+    @IBOutlet weak var clearButton: UIButton!
     @IBAction func clearButton(_ sender: UIButton) {
         textField.text = ""
         label.text = ""
         textField.isSecureTextEntry = true
+        isStopped = false
+        clearButton.isEnabled = false
     }
-    
-    
+    @IBOutlet weak var stopButton: UIButton!
     @IBAction func stopButton(_ sender: UIButton) {
-        
+        isStopped = true
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.isHidden = true
         textField.isSecureTextEntry = true
+        clearButton.isEnabled = false
+        stopButton.isEnabled = false
     }
     
     func randomPasswordGenerate() -> String {
         let passwordLength = 3
-        let passwordCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+        let passwordCharacters =
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
         let randomPassword = String((0..<passwordLength).compactMap{ _ in passwordCharacters.randomElement() })
         return randomPassword
     }
     
     func bruteForce(passwordToUnlock: String) {
-        DispatchQueue.main.async {
+        let mainQueue = DispatchQueue.main
+        mainQueue.async {
             self.activityIndicator.isHidden = false
             self.activityIndicator.startAnimating()
         }
-        
-        DispatchQueue.global(qos: .background).async {
+
+        let backgroundQueue = DispatchQueue.global(qos: .background)
+        backgroundQueue.async {
             let ALLOWED_CHARACTERS: [String] = String().printable.map { String($0) }
             var password: String = ""
-            // Will strangely ends at 0000 instead of ~~~
-            while password != passwordToUnlock { // Increase MAXIMUM_PASSWORD_SIZE value for more
-                
+            while password != passwordToUnlock && !self.isStopped {
                 password = generateBruteForce(password, fromArray: ALLOWED_CHARACTERS)
-                
-                //             Your stuff here
-                DispatchQueue.main.async {
+                mainQueue.async {
                     self.label.text = "Hacking.. \(password)"
                     if password == passwordToUnlock {
                         self.activityIndicator.stopAnimating()
                         self.activityIndicator.isHidden = true
                         self.textField.isSecureTextEntry = false
                         self.label.text = "Hacked! Password: \(password)"
+                        self.clearButton.isEnabled = true
+                        self.stopButton.isEnabled = false
                     }
                 }
-                // Your stuff here
+                if self.isStopped {
+                    mainQueue.async {
+                        self.activityIndicator.isHidden = true
+                        self.label.text = "Password \(password) is not hacked!"
+                        self.clearButton.isEnabled = true
+                    }
+                    break
+                }
             }
         }
     }
-
 }
 
 extension String {
@@ -115,4 +127,3 @@ func generateBruteForce(_ string: String, fromArray array: [String]) -> String {
     }
     return str
 }
-
