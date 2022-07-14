@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-oF-1fj">
-                                <rect key="frame" x="90.5" y="181" width="233.5" height="534"/>
+                                <rect key="frame" x="83" y="181" width="248.5" height="534"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="generated password will appear" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-9n-DOM">
-                                        <rect key="frame" x="0.0" y="0.0" width="233.5" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="generate or type in your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-9n-DOM">
+                                        <rect key="frame" x="0.0" y="0.0" width="248.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-Ha-G0B">
-                                        <rect key="frame" x="75" y="85" width="83.5" height="31"/>
+                                        <rect key="frame" x="82.5" y="85" width="83.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Generate"/>
                                         <connections>
@@ -33,7 +32,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWZ-1l-ZPx">
-                                        <rect key="frame" x="49" y="167" width="135" height="31"/>
+                                        <rect key="frame" x="56.5" y="167" width="135" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Search password"/>
                                         <connections>
@@ -41,16 +40,16 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXc-6q-hkA">
-                                        <rect key="frame" x="91.5" y="249" width="50" height="50"/>
+                                        <rect key="frame" x="99" y="249" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="E6Z-r1-uC2">
-                                        <rect key="frame" x="106.5" y="350" width="20" height="20"/>
+                                        <rect key="frame" x="114" y="350" width="20" height="20"/>
                                     </activityIndicatorView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-JM-fu3">
-                                        <rect key="frame" x="87.5" y="421" width="58" height="31"/>
+                                        <rect key="frame" x="95" y="421" width="58" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Clear"/>
                                         <connections>
@@ -58,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-eZ-FzA">
-                                        <rect key="frame" x="89.5" y="503" width="54.5" height="31"/>
+                                        <rect key="frame" x="97" y="503" width="54.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Stop"/>
                                         <connections>
@@ -67,7 +66,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-gi-XLJ">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbQ-gi-XLJ">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
@@ -76,7 +75,7 @@
                             </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vA5-oF-1fj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Tx-Hs-hiA"/>
                             <constraint firstItem="vA5-oF-1fj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oAz-cY-scP"/>
@@ -84,7 +83,9 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="E6Z-r1-uC2" id="LnF-IG-JXY"/>
+                        <outlet property="clearButton" destination="WBy-JM-fu3" id="VUP-rW-Shs"/>
                         <outlet property="label" destination="DXc-6q-hkA" id="gYW-q7-R7P"/>
+                        <outlet property="stopButton" destination="xUf-eZ-FzA" id="VB7-lO-3DU"/>
                         <outlet property="textField" destination="SUa-9n-DOM" id="g1p-jS-x2F"/>
                     </connections>
                 </viewController>
@@ -93,9 +94,4 @@
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
