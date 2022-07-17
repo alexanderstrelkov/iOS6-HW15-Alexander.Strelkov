@@ -3,4 +3,114 @@
    uuid = "4E532B7E-7871-4EE7-8A8B-975E88B04E5A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 97a2b83d794aa5bf"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.textField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 5c3e5a7480089a4b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.textField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 8cc4f4adb61d46ee"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.textField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 6e220b1a3e3c9258"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.textField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 8e6969e68d9702d4"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iOS6_HW15_Alexander_Strelkov.ViewController"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "01762F06-3678-4A48-B45D-2AC40B3F317E - 37084ed1830db347"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS6_HW15_Alexander_Strelkov.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iOS6_HW15_Alexander_Strelkov.ViewController&gt;"
+                  moduleName = "iOS6-HW15-Alexander.Strelkov"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandrstrelkov/Documents/XCode/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BA%D0%B8/iOS6-HW15-Alexander.Strelkov/iOS6-HW15-Alexander.Strelkov/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
