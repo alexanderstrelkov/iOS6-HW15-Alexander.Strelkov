@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11772C6C2884050400BA0659 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11772C6B2884050400BA0659 /* Extensions.swift */; };
 		11C48E2C287CA95E000CF92F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C48E2B287CA95E000CF92F /* AppDelegate.swift */; };
 		11C48E2E287CA95E000CF92F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C48E2D287CA95E000CF92F /* SceneDelegate.swift */; };
 		11C48E30287CA95E000CF92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C48E2F287CA95E000CF92F /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11772C6B2884050400BA0659 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		11C48E28287CA95E000CF92F /* iOS6-HW15-Alexander.Strelkov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS6-HW15-Alexander.Strelkov.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11C48E2B287CA95E000CF92F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11C48E2D287CA95E000CF92F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11772C672884043C00BA0659 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11C48E34287CA960000CF92F /* Assets.xcassets */,
+				11C48E39287CA960000CF92F /* Info.plist */,
+				11C48E31287CA95E000CF92F /* Main.storyboard */,
+				11C48E36287CA960000CF92F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11772C682884048600BA0659 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11772C6A2884049400BA0659 /* Scenes */,
+				11772C692884049000BA0659 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		11772C692884049000BA0659 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				11C48E2F287CA95E000CF92F /* ViewController.swift */,
+				11772C6B2884050400BA0659 /* Extensions.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11772C6A2884049400BA0659 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				11C48E2B287CA95E000CF92F /* AppDelegate.swift */,
+				11C48E2D287CA95E000CF92F /* SceneDelegate.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		11C48E1F287CA95E000CF92F = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +96,8 @@
 		11C48E2A287CA95E000CF92F /* iOS6-HW15-Alexander.Strelkov */ = {
 			isa = PBXGroup;
 			children = (
-				11C48E2B287CA95E000CF92F /* AppDelegate.swift */,
-				11C48E2D287CA95E000CF92F /* SceneDelegate.swift */,
-				11C48E2F287CA95E000CF92F /* ViewController.swift */,
-				11C48E31287CA95E000CF92F /* Main.storyboard */,
-				11C48E34287CA960000CF92F /* Assets.xcassets */,
-				11C48E36287CA960000CF92F /* LaunchScreen.storyboard */,
-				11C48E39287CA960000CF92F /* Info.plist */,
+				11772C682884048600BA0659 /* Sources */,
+				11772C672884043C00BA0659 /* Resources */,
 			);
 			path = "iOS6-HW15-Alexander.Strelkov";
 			sourceTree = "<group>";
@@ -141,6 +176,7 @@
 				11C48E30287CA95E000CF92F /* ViewController.swift in Sources */,
 				11C48E2C287CA95E000CF92F /* AppDelegate.swift in Sources */,
 				11C48E2E287CA95E000CF92F /* SceneDelegate.swift in Sources */,
+				11772C6C2884050400BA0659 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWP4K38XSA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS6-HW15-Alexander.Strelkov/Info.plist";
+				INFOPLIST_FILE = "iOS6-HW15-Alexander.Strelkov/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QWP4K38XSA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS6-HW15-Alexander.Strelkov/Info.plist";
+				INFOPLIST_FILE = "iOS6-HW15-Alexander.Strelkov/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
