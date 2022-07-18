@@ -1,9 +1,3 @@
-//
-//  Extension.swift
-//  iOS6-HW15-Alexander.Strelkov
-//
-//  Created by Alexandr Strelkov on 17.07.2022.
-//
 
 import UIKit
 
@@ -33,25 +27,27 @@ extension String {
         var str: String = string
         
         if str.count <= 0 {
-            str.append(characterAt(index: 0, array))
+            str.append(BruteForceMethods.characterAt(index: 0, array))
         }
         else {
             str.replace(at: str.count - 1,
-                        with: characterAt(index: (indexOf(character: str.last!, array) + 1) % array.count, array))
+                        with: BruteForceMethods.characterAt(index: (BruteForceMethods.indexOf(character: str.last ?? "a", array) + 1) % array.count, array))
             
-            if indexOf(character: str.last!, array) == 0 {
-                str = String(generateBruteForce(String(str.dropLast()), fromArray: array)) + String(str.last!)
+            if BruteForceMethods.indexOf(character: str.last ?? "a", array) == 0 {
+                str = String(generateBruteForce(String(str.dropLast()), fromArray: array)) + String(str.last ?? "a")
             }
         }
         return str
     }
 }
 
-func indexOf(character: Character, _ array: [String]) -> Int {
-    return array.firstIndex(of: String(character))!
+struct BruteForceMethods {
+    static func indexOf(character: Character, _ array: [String]) -> Int {
+        return array.firstIndex(of: String(character)) ?? 0
+    }
+    static func characterAt(index: Int, _ array: [String]) -> Character {
+        return index < array.count ? Character(array[index])
+        : Character("")
+    }
 }
 
-func characterAt(index: Int, _ array: [String]) -> Character {
-    return index < array.count ? Character(array[index])
-    : Character("")
-}

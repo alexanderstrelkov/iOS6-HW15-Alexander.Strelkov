@@ -11,9 +11,14 @@ class ViewController: UIViewController {
     
     var isStopped: Bool = false
     
+    //MARK: IBOutlets and IBActions:
+    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     @IBAction func searchPasswordButton(_ sender: UIButton) {
         if textField.text != "" {
             self.stopButton.isEnabled = true
@@ -22,10 +27,11 @@ class ViewController: UIViewController {
             label.text = "nothing to search"
         }
     }
+    
     @IBAction func generateButton(_ sender: UIButton) {
         textField.text = "\(String.randomPasswordGenerate())"
     }
-    @IBOutlet weak var clearButton: UIButton!
+    
     @IBAction func clearButton(_ sender: UIButton) {
         textField.text = ""
         label.text = ""
@@ -33,10 +39,12 @@ class ViewController: UIViewController {
         isStopped = false
         clearButton.isEnabled = false
     }
-    @IBOutlet weak var stopButton: UIButton!
+    
     @IBAction func stopButton(_ sender: UIButton) {
         isStopped = true
     }
+    
+    //MARK: ViewDidLoad:
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,12 +54,13 @@ class ViewController: UIViewController {
         stopButton.isEnabled = false
     }
     
+    //MARK: BruteForce Method
+    
     func bruteForce(passwordToUnlock: String) {
         let mainQueue = DispatchQueue.main
-        mainQueue.async {
-            self.activityIndicator.isHidden = false
-            self.activityIndicator.startAnimating()
-        }
+        
+        self.activityIndicator.isHidden = false
+        self.activityIndicator.startAnimating()
         
         let backgroundQueue = DispatchQueue.global(qos: .background)
         backgroundQueue.async {
